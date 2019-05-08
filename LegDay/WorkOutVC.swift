@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import Intents
 
 class WorkOutVC: UIViewController {
 
@@ -18,6 +19,15 @@ class WorkOutVC: UIViewController {
         super.viewDidLoad()
         self.typeLbl.isHidden = true
         self.timerLbl.isHidden = true
+        
+        //needs developer program to enable at project capabilities XD
+//        INPreferences.requestSiriAuthorization { (status) in
+//            if status == INSiriAuthorizationStatus.authorized {
+//                print("SiriKit: Authorized")
+//            } else {
+//                print("SiriKit: Unauthorized")
+//            }
+//        }
     }
 
 

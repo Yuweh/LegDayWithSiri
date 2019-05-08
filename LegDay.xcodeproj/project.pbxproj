@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76AC1AF022830EF50073A680 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC1AEF22830EF50073A680 /* IntentHandler.swift */; };
+		76AC1AF422830EF50073A680 /* IntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 76AC1AED22830EF50073A680 /* IntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		76E79A842281B5E80036C989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E79A832281B5E80036C989 /* AppDelegate.swift */; };
 		76E79A862281B5E80036C989 /* WorkOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E79A852281B5E80036C989 /* WorkOutVC.swift */; };
 		76E79A892281B5E80036C989 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E79A872281B5E80036C989 /* Main.storyboard */; };
@@ -14,7 +16,34 @@
 		76E79A8E2281B5EA0036C989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E79A8C2281B5EA0036C989 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		76AC1AF222830EF50073A680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76E79A782281B5E80036C989 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76AC1AEC22830EF50073A680;
+			remoteInfo = IntentHandler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		76AC1AF822830EF50073A680 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				76AC1AF422830EF50073A680 /* IntentHandler.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		76AC1AED22830EF50073A680 /* IntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		76AC1AEF22830EF50073A680 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		76AC1AF122830EF50073A680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76E79A802281B5E80036C989 /* LegDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E79A832281B5E80036C989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76E79A852281B5E80036C989 /* WorkOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutVC.swift; sourceTree = "<group>"; };
@@ -25,6 +54,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		76AC1AEA22830EF50073A680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76E79A7D2281B5E80036C989 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +71,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76AC1AEE22830EF50073A680 /* IntentHandler */ = {
+			isa = PBXGroup;
+			children = (
+				76AC1AEF22830EF50073A680 /* IntentHandler.swift */,
+				76AC1AF122830EF50073A680 /* Info.plist */,
+			);
+			path = IntentHandler;
+			sourceTree = "<group>";
+		};
 		76E79A772281B5E80036C989 = {
 			isa = PBXGroup;
 			children = (
 				76E79A822281B5E80036C989 /* LegDay */,
+				76AC1AEE22830EF50073A680 /* IntentHandler */,
 				76E79A812281B5E80036C989 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				76E79A802281B5E80036C989 /* LegDay.app */,
+				76AC1AED22830EF50073A680 /* IntentHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +114,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		76AC1AEC22830EF50073A680 /* IntentHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76AC1AF722830EF50073A680 /* Build configuration list for PBXNativeTarget "IntentHandler" */;
+			buildPhases = (
+				76AC1AE922830EF50073A680 /* Sources */,
+				76AC1AEA22830EF50073A680 /* Frameworks */,
+				76AC1AEB22830EF50073A680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentHandler;
+			productName = IntentHandler;
+			productReference = 76AC1AED22830EF50073A680 /* IntentHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		76E79A7F2281B5E80036C989 /* LegDay */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76E79A922281B5EA0036C989 /* Build configuration list for PBXNativeTarget "LegDay" */;
@@ -74,10 +138,12 @@
 				76E79A7C2281B5E80036C989 /* Sources */,
 				76E79A7D2281B5E80036C989 /* Frameworks */,
 				76E79A7E2281B5E80036C989 /* Resources */,
+				76AC1AF822830EF50073A680 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				76AC1AF322830EF50073A680 /* PBXTargetDependency */,
 			);
 			name = LegDay;
 			productName = LegDay;
@@ -94,6 +160,9 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Jay Bergonia";
 				TargetAttributes = {
+					76AC1AEC22830EF50073A680 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					76E79A7F2281B5E80036C989 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -113,11 +182,19 @@
 			projectRoot = "";
 			targets = (
 				76E79A7F2281B5E80036C989 /* LegDay */,
+				76AC1AEC22830EF50073A680 /* IntentHandler */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		76AC1AEB22830EF50073A680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76E79A7E2281B5E80036C989 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +208,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		76AC1AE922830EF50073A680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76AC1AF022830EF50073A680 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76E79A7C2281B5E80036C989 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +226,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76AC1AF322830EF50073A680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76AC1AEC22830EF50073A680 /* IntentHandler */;
+			targetProxy = 76AC1AF222830EF50073A680 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		76E79A872281B5E80036C989 /* Main.storyboard */ = {
@@ -162,6 +255,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		76AC1AF522830EF50073A680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3EJJ6M7CU;
+				INFOPLIST_FILE = IntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiapps.LegDay.IntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76AC1AF622830EF50073A680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3EJJ6M7CU;
+				INFOPLIST_FILE = IntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiapps.LegDay.IntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		76E79A902281B5EA0036C989 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -281,6 +412,7 @@
 		76E79A932281B5EA0036C989 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q3EJJ6M7CU;
@@ -299,6 +431,7 @@
 		76E79A942281B5EA0036C989 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q3EJJ6M7CU;
@@ -317,6 +450,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		76AC1AF722830EF50073A680 /* Build configuration list for PBXNativeTarget "IntentHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76AC1AF522830EF50073A680 /* Debug */,
+				76AC1AF622830EF50073A680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		76E79A7B2281B5E80036C989 /* Build configuration list for PBXProject "LegDay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
